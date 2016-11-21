@@ -115,7 +115,7 @@ void __noreturn sub_4007F0()
 This function basically prints "You entered the correct password! (newline) Great job!" and then exits the code. As the flag is not printed when the password is guessed correctly, the password is probably the flag.
 
 #If-statements not true
-In order to get to function sub_4007F0 all if-statements passed in "main" should return false. The code runs three if-statements.
+In order to get to function sub_4007F0, all if-statements passed in "main" should return false. The code runs three if-statements.
 
 First if-statement
 ```
