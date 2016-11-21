@@ -83,7 +83,7 @@ The following operations have occured:
 * Changed char v8[8] to char v8[18] as the actual size of the string copied to v8 is 18 (see strcpy);
 * Removed v9. It serves no purpose in this code;
 * Removed a2 and a3 from printf statement. This serves no purpose either;
-* Removedd v6 as it only carried value 7. This is inserted directly in the if-statement;
+* Removed v6 as it only carried value 7. This is inserted directly into the if-statement;
 * Changed (char)(*((_BYTE *)&v7 + i % v6) ^ v8[i]) ) to (char)((v7 >> (8*(i % 7))) & 0xff) ^ v8[i]).
 
 The last operation is based on the typedef of *((_BYTE *)&x + y, which can be found in the files of Hex-Rays decompiler.
