@@ -17,7 +17,7 @@ The file is a CD-ROM. To read the structure and files on the CD-ROM, the filesys
 > mount dtrump.img /mnt/media
 
 To browse to the files run command:
-> /mnt/media
+> cd /mnt/media
 
 The folder structure of the CD-ROM:
 ```
