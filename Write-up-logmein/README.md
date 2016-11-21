@@ -84,10 +84,10 @@ The following operations have occured:
 * Removed v9. It serves no purpose in this code;
 * Removed a2 and a3 from printf statement. This serves no purpose either;
 * Removed v6 as it only carried value 7. This is inserted directly into the if-statement;
-* Changed (char)(*((_BYTE *)&v7 + i % v6) ^ v8[i]) ) to (char)((v7 >> (8*(i % 7))) & 0xff) ^ v8[i]).
+* Changed (char)(\*((_BYTE \*)&v7 + i % v6) ^ v8[i]) ) to (char)((v7 >> (8\*(i % 7))) & 0xff) ^ v8[i]).
 
-The last operation is based on the typedef of *((_BYTE *)&x + y, which can be found in the files of Hex-Rays decompiler.
-It basically states *((_BYTE*)&(x)+y means: yth byte of value x. So the statement was replaced to get the (i%7)th byte of v7.
+The last operation is based on the typedef of \*((_BYTE \*)&x + y, which can be found in the files of Hex-Rays decompiler.
+It basically states \*((_BYTE\*)&(x)+y means: yth byte of value x. So the statement was replaced to get the (i%7)th byte of v7.
 
 #Functions
 The code contains two different functions sub_4007C0 and sub_4007F0.
