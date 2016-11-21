@@ -13,7 +13,7 @@ Execution of the command results in the output:
 > dtrump.img: ISO 9660 CD-ROM filesystem data 'CDROM'
 
 The file is a CD-ROM. To read the structure and files on the CD-ROM, the filesystem can be mounted. Mounting the file can be achieved by using the following commands:
-> losetup /dev/loop0 dtrump.img
+> losetup /dev/loop0 dtrump.img <br/>
 > mount /dev/loop0 -o loop /mnt/media
 
 Because dtrump.img is a CD-ROM and does not represent a block device, it is necessary to use losetup to associate a loop device with dtrump.img
