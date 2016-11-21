@@ -124,7 +124,7 @@ if ( strlen(s) < strlen(v8) )
 ```
 
 This if-statement defines, the string length of s (input string) may not be lower than the string length of v8.
-The length of string s should remain above or equal to 17. Why 17? One character, the double quote, was escaped using a backslash. So, the backslash does not count as a character.
+The length of string s should remain greater than or equal to 17. Why 17? One character, the double quote, was escaped using a backslash. So, the backslash does not count as a character.
 
 Second if-statement
 ```
